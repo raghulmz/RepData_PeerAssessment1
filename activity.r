@@ -51,6 +51,11 @@ plot(x = intreval_activity$interval,
      main = "Average Number of Steps Taken by Interval", 
      )
 
+max_number_steps  <-  max(intreval_activity$avg_no_of_steps)
+interval_max_steps <- intreval_activity[
+  which(intreval_activity$avg_no_of_steps == max_number_steps),"interval"]
+abline(v = interval_max_steps, col = "green", lwd = 3)
+
 dev.off()
 ###################
 
