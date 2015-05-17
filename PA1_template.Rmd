@@ -50,6 +50,8 @@ mean_no_of_steps <- mean(date_activity$No_of_steps, na.rm = T)
 median_no_of_steps <- median(date_activity$No_of_steps, na.rm = T)
 ```
 
+**Mean = 10766** <br>
+**Median = 10765** <br>
 #### Plot abline for mean and median
 
 Abline is used to show mean and median in the histogram
@@ -142,10 +144,18 @@ hist(date_activity$No_of_steps,
      col = "grey", 
      main = "Number of Steps taken per Day",
      xlab = "Number of Steps taken per Day")
-
+```
+#####Calculate mean and median
+```r
 mean_no_of_steps <- mean(date_activity$No_of_steps, na.rm = T)
 median_no_of_steps <- median(date_activity$No_of_steps, na.rm = T)
+```
 
+**Mean = 10766** <br>
+**Median = 10765** <br>
+
+#####Add abline for mean and median
+```r
 abline(v = mean_no_of_steps, col = "green", lwd = 2)
 abline(v = median_no_of_steps, col = "blue", lwd = 2)
 
