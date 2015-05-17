@@ -4,7 +4,11 @@
 ### List of files
 
 * R script containing code to create plots `activity.r`
-* Completed Report `PA1_template.Rmd`
+* Completed Report (Rmd) `PA1_template.Rmd`
+* Completed Report (md) `PA1_template.md`
+* Completed Report (html) `PA1_template.html`
+
+* Data files `activity.csv & activity.csv`
 <br> **Image files:**
 * `Plot1.png` - Histogram of number of steps taken per Day
 * `Plot2.png` - Average Number of steps Taken by interval
