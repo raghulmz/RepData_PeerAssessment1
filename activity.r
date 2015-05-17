@@ -56,6 +56,14 @@ interval_max_steps <- intreval_activity[
   which(intreval_activity$avg_no_of_steps == max_number_steps),"interval"]
 abline(v = interval_max_steps, col = "green", lwd = 3)
 
+legend("topright", 
+       lwd = 3, 
+       lty = 1, 
+       legend = "Maximum", 
+       col = "green",
+       cex = .8
+)
+
 dev.off()
 ###################
 
