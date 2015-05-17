@@ -82,6 +82,9 @@ legend("topright",
 dev.off()
 ```
 
+##### Plot
+![Plot 1](plot1.png)
+
 ## What is the average daily activity pattern?
 
 #### Calculating mean of each interval across the dates
@@ -111,6 +114,10 @@ plot(x = intreval_activity$interval,
 
 dev.off()
 ```
+
+##### Plot
+![Plot 2](plot2.png)
+
 
 ## Calculating the number of `NA` values
 
@@ -172,6 +179,10 @@ legend("topright",
 dev.off()
 ```
 
+##### Plot
+![Plot 3](plot3.png)
+
+
 ## Plot to compare Average number of steps between weekends and weekdays
 
 Covert time format and obtain weekday for all dates
@@ -209,6 +220,7 @@ png("plot4.png")
 par(mfrow = c(2, 1))
 ```
 
+
 Create a new plot to compare between weekdays and weekends
 ```r
 plot(intreval_activity_weekday,
@@ -222,3 +234,6 @@ plot(intreval_activity_weekend,
 
 dev.off()
 ```
+
+##### Plot
+![Plot 4](plot4.png)
