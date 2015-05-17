@@ -10,7 +10,7 @@ date_activity <- activity %>%
   group_by(date) %>% 
   summarise(No_of_steps = sum(steps))
 
-png("plot1.png")
+png("figures/plot1.png")
 hist(date_activity$No_of_steps, 
      breaks = 25, 
      col = "grey", 
@@ -42,7 +42,7 @@ intreval_activity <- activity %>%
 dim(intreval_activity)
 head(intreval_activity)
 
-png("plot2.png")
+png("figures/plot2.png")
 plot(x = intreval_activity$interval, 
      y = intreval_activity$avg_no_of_steps,   
      type = "l", 
@@ -72,7 +72,7 @@ date_activity <- activity %>%
   group_by(date) %>% 
   summarise(No_of_steps = sum(steps))
 
-png("plot3.png")
+png("figures/plot3.png")
 hist(date_activity$No_of_steps, 
      breaks = 25, 
      col = "grey", 
@@ -122,7 +122,7 @@ intreval_activity_weekday <- activity[which(activity$daytype=="Weekday"),-2] %>%
   group_by(interval) %>% 
   summarise(avg_no_of_steps = mean(steps, na.rm = T))
 
-png("plot4.png")
+png("figures/plot4.png")
 par(mfrow = c(2, 1))
 
 plot(intreval_activity_weekday,
