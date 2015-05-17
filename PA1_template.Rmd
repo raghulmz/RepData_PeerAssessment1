@@ -9,6 +9,8 @@ This reports details how the plots in this folder were created
 * `Plot3.png` - Histogram of number of steps taken per Day after Imputing missing values
 * `Plot4.png` - Plot to compare average number of steps taken during weekdays vs weekends
 
+
+
 ## Loading and preprocessing the data
 
 * Read data from csv file. Using option `header=T`
