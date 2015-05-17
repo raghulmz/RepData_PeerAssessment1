@@ -35,7 +35,7 @@ date_activity <- activity %>%
 Open a png file `plot1.png` and plot the histogram.
 
 ```r
-png("plot1.png")
+png("figures/plot1.png")
 hist(date_activity$No_of_steps, 
      breaks = 25, 
      col = "grey", 
@@ -85,7 +85,7 @@ dev.off()
 ```
 
 ##### Plot
-![Plot 1](plot1.png)
+![Plot 1](figures/plot1.png)
 
 ## What is the average daily activity pattern?
 
@@ -105,7 +105,7 @@ head(intreval_activity)
 
 A file `plot2.png` is opened and a plot of Average number of steps vs interval is made.
 ```r
-png("plot2.png")
+png("figures/plot2.png")
 plot(x = intreval_activity$interval, 
      y = intreval_activity$avg_no_of_steps,   
      type = "l", 
@@ -128,7 +128,7 @@ dev.off()
 ```
 
 ##### Plot
-![Plot 2](plot2.png)
+![Plot 2](figures/plot2.png)
 
 
 ## Calculating the number of `NA` values
@@ -157,7 +157,7 @@ date_activity <- activity %>%
 #### Plot Histogram
 
 ```r
-png("plot3.png")
+png("figures/plot3.png")
 hist(date_activity$No_of_steps, 
      breaks = 25, 
      col = "grey", 
@@ -192,7 +192,7 @@ dev.off()
 ```
 
 ##### Plot
-![Plot 3](plot3.png)
+![Plot 3](figures/plot3.png)
 
 
 ## Plot to compare Average number of steps between weekends and weekdays
@@ -228,7 +228,7 @@ intreval_activity_weekday <- activity[which(activity$daytype=="Weekday"),-2] %>%
   group_by(interval) %>% 
   summarise(avg_no_of_steps = mean(steps, na.rm = T))
 
-png("plot4.png")
+png("figures/plot4.png")
 par(mfrow = c(2, 1))
 ```
 
@@ -248,4 +248,4 @@ dev.off()
 ```
 
 ##### Plot
-![Plot 4](plot4.png)
+![Plot 4](figures/plot4.png)
